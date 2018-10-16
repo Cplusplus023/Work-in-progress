@@ -13,7 +13,7 @@ main ()
   getline (cin, name);
   cout << "Hello " << name << "\n";
   getline (cin, answer);
-  if (iequals (answer, "hello" ) || (answer, "hi"))
+  if (iequals (answer, "hello" ) || iequals (answer, "hi"))
 
     {
       cout << "Welcome\n";
@@ -40,7 +40,7 @@ main ()
 	  if (iequals (answer, "Yes"))
 	    {
 	      cout << "So how is hell" << name << "\n";
-	      getline(cin,answer)
+	      getline(cin,answer);
 	      if (iequals (answer, "Good") || iequals (answer, "Fine"))
 		{
 		  cout << "Would you like to see the slaughter arena\n";
