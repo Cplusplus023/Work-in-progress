@@ -1,0 +1,331 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <boost/algorithm/string/predicate.hpp>
+using namespace std;
+using namespace boost;
+int
+main ()
+{
+  string answer;
+  string name;
+  double honor;
+  honor = 0;
+  cout << "What is your name\n";
+  getline (cin, name);
+  cout << "Hello " << name << "\n";
+  getline (cin, answer);
+  if (iequals (answer, "hello") || iequals (answer, "hi")
+      || iequals (answer, "Likewise"))
+    {
+      cout << "Your honor has gone up by 100" << endl;
+      honor += 100;
+      cout << "Your honor is now " << honor << endl;
+      cout << "Welcome\n";
+      getline (cin, answer);
+      if (iequals (answer, "what am i doing here"))
+	{
+	  cout << "You dont remember?\n";
+	  getline (cin, answer);
+	  if (iequals (answer, "No"))
+	    {
+	      cout << "You are dead" << endl;
+	      cout << "Now dont freak out" << endl;
+
+	      if (iequals (answer, "cool") || iequals (answer, "What"))
+		{
+		  cout << "You commited sucide";
+		}
+	    }
+
+	}
+      else if (iequals (answer, "What is honor"))
+	{
+	  cout << "it is away to measure your standing in the community\n";
+	}
+      else if (iequals (answer, "Thank you"))
+	{
+	  cout << "You honor has increased by 50\n";
+	  honor += 50;
+	  cout << "You honor is now " << honor << endl;
+	  cout << "Your Welcome\n";
+	  cin >> answer;
+	}
+      else if (iequals (answer, "Welcome to where"))
+	{
+	  cout << "Welcome to Hell\n";
+	  getline (cin, answer);
+	  if (iequals (answer, "Yes"))
+	    {
+	      cout << "So how is hell " << name << "\n";
+	      getline (cin, answer);
+	      if (iequals (answer, "Good") || iequals (answer, "Fine"))
+		{
+		  cout << "Would you like to see the slaughter arena\n";
+		  if (iequals (answer, "YES"))
+		    {
+		      cout << "You honor has increased by 50\n";
+	          honor += 50;
+		      cout << "Follow me \n";
+		      cout << "The people who fight here have hated each"
+			" other for 100's of years\n";
+		      getline (cin, answer);
+		      if (iequals (answer, "why are they fighting"))
+			{
+			  cout << "I dont know let's ask them \n";
+			  cout << "You approach the fighters \n";
+			  getline (cin, answer);
+			  if (iequals (answer, "Hey why you fighting"))
+			    {
+			      cout << "He killed my brother \n";
+			      if (iequals (answer, "Why did you kill him")
+				  || iequals (answer,
+					      "Why did you kill his brother"))
+				{
+				  cout <<
+				    "He was plotting to kill you and it is my"
+				    << " duty to protect you\n";
+				  cout <<
+				    "The fighters start to glow and then vanish";
+				  cout << "Your honor has gone up by 200" << endl;
+				  honor += 200;
+				getline (cin, answer);
+				    if (iequals (answer,"what happened to them"))
+				    {
+				        cout<<"Idk i think they went to heaven,"<<
+				        " that has not happened in over 2000 years\n";
+				    }
+				}
+			    }
+			}
+		    }
+		}
+	      else
+		{
+		  cout << "You dont like hell\n";
+		}
+
+	    }
+	  else
+	    {
+	      cout << "I must leave you now have fun";
+	    }
+	}
+    }
+  else
+    {
+      cout << "Your honor has gone down 50\n";
+      honor -= 50;
+      cout << "Your honor is now " << honor << endl;
+      cout << "Why no hello\n";
+      cin >> answer;
+      cin.get ();
+      if (iequals (answer, "hello"))
+	{
+	  cout << "Your honor has gone up by 100" << endl;
+	  honor += 100;
+	  cout << "Your honor is now " << honor << endl;
+	  cout << "Welcome\n";
+	  getline (cin, answer);
+	  if (iequals (answer, "what am i doing here"))
+	    {
+	      cout << "You dont remember?\n";
+	      getline (cin, answer);
+	      if (iequals (answer, "No"))
+		{
+		  cout << "You are dead" << endl;
+		  cout << "Now dont freak out" << endl;
+
+		  if (iequals (answer, "cool") || iequals (answer, "What"))
+		    {
+		      cout << "You commited sucide";
+		    }
+		}
+
+	    }
+	  else if (iequals (answer, "What is honor"))
+	    {
+	      cout <<
+		"it is away to measure your standing in the community\n";
+	    }
+	  else if (iequals (answer, "Thank you"))
+	    {
+	      cout << "You honor has increased by 50\n";
+	      honor += 50;
+	      cout << "You honor is now " << honor << endl;
+	      cout << "Your Welcome\n";
+	      cin >> answer;
+	    }
+	  else if (iequals (answer, "Welcome to where"))
+	    {
+	      cout << "Welcome to Hell\n";
+	      getline (cin, answer);
+	      if (iequals (answer, "Yes"))
+		{
+		  cout << "So how is hell" << name << "\n";
+		  getline (cin, answer);
+		  if (iequals (answer, "Good") || iequals (answer, "Fine"))
+		    {
+		      cout << "Would you like to see the slaughter arena\n";
+		      if (iequals (answer, "YES"))
+			{
+			  cout << "Follow me";
+			   cout << "The people who fight here have hated each"
+			" other for 100's of years\n";
+		      getline (cin, answer);
+		      if (iequals (answer, "why are they fighting"))
+			{
+			  cout << "I dont know let's ask them \n";
+			  cout << "You approach the fighters \n";
+			  getline (cin, answer);
+			  if (iequals (answer, "Hey why you fighting"))
+			    {
+			      cout << "He killed my brother \n";
+			      if (iequals (answer, "Why did you kill him")
+				  || iequals (answer,
+					      "Why did you kill his brother"))
+				{
+				  cout <<
+				    "He was plotting to kill you and it is my"
+				    << " duty to protect you\n";
+				  cout <<
+				    "The fighters start to glow and then vanish";
+				  cout << "Your honor has gone up by 200" << endl;
+				  honor += 200;
+				getline (cin, answer);
+				    if (iequals (answer,"what happened to them"))
+				    {
+				        cout<<"Idk i think they went to heaven,"<<
+				        " that has not happened in over 2000 years\n";
+				    }
+				}
+			    }
+			}
+			}
+		    }
+		  else
+		    {
+		      cout << "You dont like hell ;.(\n";
+		    }
+
+		}
+	      else
+		{
+		  cout << "I must leave you now have fun";
+		}
+	    }
+	}
+      else
+	{
+
+	  cout << "Please Leave now :(\n";
+	  cin >> answer;
+	  cin.get ();
+	  if (iequals (answer, "Why"))
+	    {
+	      cout << "i dont like you" << endl;
+	    }
+	  if (iequals (answer, "no"))
+	    {
+	      cout << "WHAT! WHY NOT!\n";
+	      getline (cin, answer);
+
+	      if (iequals (answer, "i like it here"))
+		{
+		  cout << "LEAVE\n";
+		  getline (cin, answer);
+
+		  if (iequals (answer, "no"))
+		    {
+		      cout << "I SAID LEAVE\n";
+		      getline (cin, answer);
+		      if (iequals (answer, "why"))
+			{
+			  cout << "I don't like annoying kids\n";
+			  getline (cin, answer);
+			  if (iequals (answer, "im not a kid"))
+			    {
+			      cout << "so your annoying";
+			    }
+			  if (iequals (answer, "but im not annoying"))
+			    {
+			      cout << "Then why are you here\n";
+			      getline (cin, answer);
+			      if (iequals (answer, "i can't leave"))
+				{
+				  cout << "Really";
+				  if (iequals (answer, "yep"))
+				    cout << "I will help you\n";
+				  if (iequals (answer,
+					       "i didnt ask for your help"))
+				    {
+				      cout << "Then i won't help you";
+				    }
+				}
+			    }
+			}
+
+
+		    }
+		}
+	      else
+		{
+		  cout << "Power Down\n";
+		  getline (cin, answer);
+		  if (iequals (answer, "no no wait"))
+		    {
+		      cout << "....\n";
+		      getline (cin, answer);
+		      if (iequals (answer, "load")
+			  || iequals (answer, "Work"))
+			{
+			  cout << "Why you still here?\n";
+			  getline (cin, answer);
+			  if (iequals (answer, "im stuck here"))
+			    {
+			      cout << "Ha Ha\n\a";
+			      getline (cin, answer);
+			      if (iequals (answer, "its not funny"))
+				{
+				  cout << "It kind of is\n";
+				  getline (cin, answer);
+				  if (iequals (answer, "can you help"))
+				    {
+				      cout << "Fine";
+				    }
+				}
+			    }
+
+			  else
+			    {
+			      cout << "Adios";
+			    }
+			}
+		    }
+		}
+	    }
+	  else
+	    {
+	      cout << "Good Bye";
+	    }
+	}
+    }
+ 
+  if (honor > 999)
+    {
+      cout << "you are engulfed in a ray of light";
+      cout << " and you hear someone say you go to heaven";
+    }
+  else if (honor < -999)
+    { 
+      cout << "you are engulfed in a ring of fire"; 
+      cout << " and you a hysterical laugh and you are" <<
+      " truly evil go to satan";
+    }
+  else
+    {
+      cout << "Stay in hell";
+    }
+  return 0;
+}
+
